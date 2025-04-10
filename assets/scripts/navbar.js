@@ -7,9 +7,9 @@ function toggleMenu(el) {
     menu.classList.toggle('active');
 
     if (el.classList.contains('active')) {
-        el.children[0].style.transform = 'rotate(45deg) translateY(8px)';
+        el.children[0].style.transform = 'rotate(45deg) translateY(10px)';
         el.children[1].style.opacity = '0';
-        el.children[2].style.transform = 'rotate(-45deg) translateY(-8px)';
+        el.children[2].style.transform = 'rotate(-45deg) translateY(-10px)';
     } else {
         el.children[0].style.transform = '';
         el.children[1].style.opacity = '1';
