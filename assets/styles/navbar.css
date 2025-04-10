@@ -1,0 +1,124 @@
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--color-black);
+    z-index: 1000;
+}
+
+.menu-wrapper .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.menu-wrapper .logo-img{
+    height: 40px;
+    width: auto;
+}
+.menu-wrapper .menu {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: center;
+    /* Centers the menu */
+    flex-grow: 1;
+}
+
+.menu-wrapper .menu li {
+    position: relative;
+}
+
+.menu-wrapper .menu li a {
+    color: var(--color-white);
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu-wrapper .menu li a:hover {
+    background-color: var(--color-gray);
+}
+
+.menu-wrapper .menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-black);
+    width: 200px;
+    border: 1px solid var(--color-gray);
+}
+
+.menu-wrapper .menu .dropdown li a {
+    padding: 10px;
+}
+
+.menu-wrapper .menu li:hover .dropdown {
+    display: block;
+}
+
+.menu-wrapper .menu-toggle {
+    display: none;
+    flex-direction: column;
+    font-size: 30px;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.menu-wrapper .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .menu-wrapper .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-black);
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+        /* Centers the menu items on small screens */
+    }
+
+    .menu-wrapper .menu li {
+        width: 100%;
+        text-align: center;
+        /* Centers menu items in each list item */
+    }
+
+    .menu-wrapper .menu-toggle {
+        display: block;
+    }
+
+    .menu-wrapper .menu.active {
+        display: flex;
+    }
+
+    .menu-wrapper .menu .dropdown {
+        display: none;
+        position: relative;
+    }
+
+    .menu-wrapper .menu li:hover .dropdown {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.active {
+    display: flex !important;
+}
