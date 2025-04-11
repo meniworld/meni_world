@@ -22,3 +22,7 @@ a {
 li {
     list-style: none;
 }
+
+.main-content{
+    margin: 80px 0;
+}
