@@ -1,0 +1,128 @@
+.about-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-header h1 {
+    font-size: 48px;
+    margin: 0;
+    color: var(--color-white);
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--color-green);
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color-white);
+    max-width: 800px;
+    margin: auto;
+}
+
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.mv-box {
+    border: 2px solid var(--color-dark-gray);
+    padding: 30px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.mv-box:hover {
+    transform: translateY(-6px);
+}
+
+.mv-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--color-red);
+}
+
+/* Team Section */
+/* .team-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 30px;
+margin-top: 40px;
+}
+
+.team-member {
+background-color: var(--color-dark-gray);
+padding: 20px;
+border-radius: 10px;
+}
+
+.team-member img {
+width: 100%;
+border-radius: 50%;
+margin-bottom: 15px;
+}
+
+.team-member h4 {
+color: var(--color-green);
+margin: 10px 0 5px;
+} */
+
+.timeline {
+    margin-top: 60px;
+    text-align: left;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 4px solid var(--color-green);
+}
+
+.timeline-item h4 {
+    margin-bottom: 5px;
+    color: var(--color-red);
+}
+
+.cta-box {
+    margin-top: 60px;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.cta-box h3 {
+    color: var(--color-green);
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.cta-box a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta-box a:hover {
+    background-color: var(--color-green);
+}
+
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 36px;
+    }
+}
