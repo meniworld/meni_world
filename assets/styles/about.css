@@ -31,9 +31,8 @@
 }
 
 .mission-vision {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
+    display: flex;
+    justify-content: space-around;
     margin-top: 50px;
 }
 
@@ -121,8 +120,13 @@ margin: 10px 0 5px;
     background-color: var(--color-green);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .about-header h1 {
         font-size: 36px;
+    }
+
+    .mission-vision {
+        flex-direction: column;
+        gap: 20px;
     }
 }
