@@ -1,0 +1,47 @@
+.counter-section {
+    padding: 60px 20px;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.counter-title h2 {
+    font-size: 36px;
+    color: var(--color-green);
+    margin-bottom: 10px;
+}
+
+.counter-title p {
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.counter-box {
+    border: 1px solid #333;
+    padding: 30px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.counter-box:hover {
+    transform: translateY(-6px);
+}
+
+.counter-box h3 {
+    font-size: 32px;
+    color: var(--color-red);
+    margin-bottom: 10px;
+}
+
+.counter-box p {
+    font-size: 16px;
+    color: #ccc;
+}
