@@ -1,0 +1,134 @@
+.contact-section {
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: var(--color-white);
+}
+
+.section-title p {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.contact-form,
+.contact-info {
+    width: 48%;
+}
+
+.contact-form h3,
+.contact-info h3 {
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 12px;
+    background: #222;
+    color: #eee;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: var(--color-red);
+    border: none;
+    color: var(--color-white);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--color-green);
+}
+
+.contact-info .address {
+    margin-bottom: 20px;
+}
+
+.contact-info strong {
+    color: #ccc;
+    font-weight: 600;
+}
+
+.contact-info p,
+.contact-info a {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links h4 {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: var(--color-red);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-links a:hover {
+    color: var(--color-white);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+}
