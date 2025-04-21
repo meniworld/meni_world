@@ -1,0 +1,106 @@
+.project-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--color-white);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-card {
+    padding: 20px;
+    border: 2px solid #1e293b;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-btn,
+.demo-btn {
+    padding: 10px 18px;
+    border-radius: 5px;
+    color: var(--color-white);
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    min-width: 120px;
+    text-align: center;
+}
+
+.project-btn {
+    background-color: var(--color-red);
+}
+
+.project-btn:hover {
+    background-color: #b71c1c;
+}
+
+.demo-btn {
+    background-color: var(--color-green);
+}
+
+.demo-btn:hover {
+    background-color: #2e7d32;
+}
+
+/* 🌐 Responsive tweaks */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-btn,
+    .demo-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
