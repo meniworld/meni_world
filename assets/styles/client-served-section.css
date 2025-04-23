@@ -6,7 +6,7 @@
 
 .counter-title h2 {
     font-size: 36px;
-    1e293b
+    color: var(--color-green) !important;
     margin-bottom: 10px;
 }
 
