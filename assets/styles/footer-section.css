@@ -85,6 +85,7 @@
 
 .footer-contact .contact-btn:hover {
     background-color: #c40000;
+    color: #fff;
     /* darker red for hover */
 }
 
