@@ -26,3 +26,7 @@ li {
 .main-content{
     margin: 80px 0;
 }
+
+.color-red{
+    color: var(--color-red) !important;
+}
