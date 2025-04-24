@@ -19,7 +19,7 @@
 
 .project-card {
     padding: 20px;
-    border: 2px solid #1e293b;
+    border: 2px solid var(--color-dark-muted-blue);
     border-radius: 12px;
     box-shadow: 0 4px 10px #ffffff0d;
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
@@ -31,7 +31,7 @@
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px #e5393533;
-    border-color: var(--color-red);
+    border-color: var(--color-green);
 }
 
 .project-card img {
