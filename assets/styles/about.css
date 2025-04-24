@@ -58,7 +58,7 @@
 }
 
 .mv-box:hover {
-    border: 2px solid var(--color-red);
+    border: 2px solid var(--color-green);
     transform: translateY(-8px);
     box-shadow: 0 10px 25px #ffffff1a;
 }
