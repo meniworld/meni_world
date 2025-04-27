@@ -12,8 +12,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--color-white);
+    /* color: var(--color-white);
+    background-color: var(--color-black); */
+}
+body {
+    min-height: 100vh;
     background-color: var(--color-black);
+    background-image: radial-gradient(#e53935 1px, transparent 1px),
+                      radial-gradient(#43a047 1px, transparent 1px);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
+    animation: dotsMove 15s linear infinite;
+}
+
+@keyframes dotsMove {
+    0% { background-position: 0 0, 25px 25px; }
+    100% { background-position: 50px 50px, 75px 75px; }
 }
 
 a {
